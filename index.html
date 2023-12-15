@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Forcast Map</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <img src="..." class="rounded float-start" alt="...">
+              <a href="https://www.weather.gov/forecastmaps">
+                <img src="/images.jpeg" class="rounded float-end" alt="...">
+            </a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.weather.gov/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.weather.gov/wrh/climate">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Floods</a></li>
+                      <li><a class="dropdown-item" href="#">Tsunami</a></li>
+                      <li><a class="dropdown-item" href="#">Beach Hazards</a></li>
+                      <li><a class="dropdown-item" href="#">Cold</a></li>
+                      <li><a class="dropdown-item" href="#">Fog</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> <br> <br>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Feedback</label> <br><br>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write Here">
+          </div>
+          
+    </header>
+    <div class="container">
+      <div class="center-container">
+          <div class="text-center">
+              <p>Weather Forcast in diffrent Country</p>
+          </div>
+      </div>
+  </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="countryInput">Search for a Country:</label>
+                <input type="text" id="countryInput" class="form-control" placeholder="Enter country name">
+                <button onclick="searchCountry()" class="btn btn-primary">Search</button>
+            </div>
+            <div class="image-container">
+              <!-- Add the picture next to the search box -->
+              <img src="/2.jpg" class="img-fluid" alt="Country Image">
+          </div>
+            <div class="col-md-6">
+                
+            </div> 
+            
+
+        </div>
+        <div class="row mt-4" id="countryResults"></div>
+    </div>
+    <label for="customRange1" class="form-label">size</label>
+<input type="range" class="form-range" id="customRange1">
+<table class="table caption-top">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">GlobalCloudiness & Rain</th>
+      <th scope="col">Tropical Cyclones</th>
+      <th scope="col">Heavy Rain/Snow</th>
+      <th scope="col"> Thunderstorms</th>
+  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Severe Weather</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>7.7.7.7</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>5.5</td>
+      <td>Severe Weather</td>
+      <td>6.6</td>
+    </tr>
+  </tbody>
+</table>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2023 Country Info</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+</body>
+</html>
